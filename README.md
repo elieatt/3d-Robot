@@ -77,15 +77,16 @@ Built in C++ using OpenGL and GLUT, featuring a fully articulated 3D robot in an
 - GLUT32 libraries (`glut32.dll`, `glut32.lib`, `glut/glut.h`)
 
 ### With Code::Blocks
-1. Open `robot_project.cbp`
-2. Build & Run (`F9`)
+1. Download or recreate the project file (`robot_project.cbp`) in Code::Blocks
+2. Link the required libraries (see Prerequisites above)
+3. Build & Run (`F9`)
 
 ### Manual (GCC/MinGW)
 ```bash
 g++ main.cpp -o robot_project -lglut32 -lopengl32 -lglu32 -lwinmm -lgdi32
 ```
 
-A pre-compiled `robot_project.exe` is included in `bin/Debug/`.
+> **Note:** Compiled binaries, object files, and IDE project files are excluded from this repository via `.gitignore`. Only the source code is tracked.
 
 ---
 
@@ -93,13 +94,13 @@ A pre-compiled `robot_project.exe` is included in `bin/Debug/`.
 
 ```
 robot_project/
-├── main.cpp              # All source code (~1100 lines)
-├── robot_project.cbp     # Code::Blocks project file
-├── bin/Debug/
-│   └── robot_project.exe # Pre-compiled executable
-└── obj/Debug/
-    └── main.o
+├── main.cpp     # All source code (~1100 lines)
+├── README.md
+├── UNLICENSE
+└── .gitignore
 ```
+
+> `bin/`, `obj/`, `.cbp`, `.depend`, and `.layout` files are not included — compile from source using the instructions above.
 
 ---
 
