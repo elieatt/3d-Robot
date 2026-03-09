@@ -1,0 +1,20 @@
+# Compiled objects and binaries
+*.o
+*.exe
+*.out
+*.a
+*.lib
+*.dll
+
+# Build directories
+obj/
+bin/
+
+# IDE files
+*.depend
+*.layout
+*.cbp
+
+# Windows
+Thumbs.db
+desktop.ini
